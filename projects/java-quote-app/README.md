@@ -35,3 +35,4 @@ docker run -p 8000:8000 java-app:latest
 - `eclipse-temurin:17-jdk` is a widely-used, community-trusted OpenJDK distribution image (successor to the old AdoptOpenJDK images) — good to know it exists as an alternative to `openjdk`.
 - Here, compilation (`javac`) happens **inside the Docker build step** rather than compiling locally first — this means the container image includes the full JDK (larger image), which is fine for learning but not ideal for production (a multi-stage build would compile with the JDK, then run with just a JRE for a smaller final image).
 - `EXPOSE 8000` documents the port; `-p 8000:8000` in `docker run` is what actually maps it to the host.
+<img width="846" height="273" alt="image" src="https://github.com/user-attachments/assets/cc8be06b-d093-4faa-bf3b-5252c304b38b" />
