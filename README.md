@@ -1,2 +1,21 @@
-# docker-learning
-Docker learning repository covering Docker fundamentals, hands-on projects, Dockerfiles, and detailed notes.
+# Docker Learning Notes 🐳
+
+My personal notes and hands-on projects while learning Docker from scratch.
+Includes concepts, terminology, and real Dockerized projects (Java app, Nginx, Portfolio site).
+
+## 📖 Topics Covered
+- Introduction & Purpose
+- Virtualization vs Containerization
+- Docker Build Process
+- Docker Terminology
+- Docker Components
+- Hands-on Projects
+
+## 🚀 Projects
+| Project | Description | Link |
+|---|---|---|
+| Java App | Containerized Java application | [/projects/java-app](./projects/java-app) |
+| Nginx | Custom Nginx server setup | [/projects/nginx-app](./projects/nginx-app) |
+| Portfolio | Dockerized personal portfolio site | [/projects/portfolio-app](./projects/portfolio-app) |
+
+Feel free to explore, star ⭐ if useful, and reach out if you have suggestions!
