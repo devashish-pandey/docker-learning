@@ -14,7 +14,7 @@ Includes concepts, terminology, and real Dockerized projects (Java app, Nginx, P
 ## 🚀 Projects
 | Project | Description | Link |
 |---|---|---|
-| Java App | Containerized Java application | [/projects/java-app](./projects/java-app) |
+| Java App | Containerized Java application | [/projects/java-quote-app](./projects/java-quote-app) |
 | Portfolio | Dockerized personal portfolio site | [/projects/portfolio-app](./projects/portfolio-app) |
 
 Feel free to explore, star ⭐ if useful, and reach out if you have suggestions!
