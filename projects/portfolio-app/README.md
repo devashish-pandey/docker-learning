@@ -35,3 +35,4 @@ docker run -p 3000:3000 portfolio-app
 - Running `npm run build` then `npm run dev` in the same container is a bit redundant (build creates a production bundle, dev starts a development server that usually doesn't need the build output) — this is something I want to look into: likely I only need one or the other depending on whether I want a dev environment or a production-ready build served via something like `serve` or `nginx`.
 - This project helped me practice **debugging containers** — checking `docker logs <container_id>` was useful to see why the app wasn't reachable when the port mapping was wrong.
 
+<img width="1250" height="630" alt="community_project_demo_1" src="https://github.com/user-attachments/assets/d59be6f1-4afb-45d3-8cc7-b08a26fdf0fe" />
