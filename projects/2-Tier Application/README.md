@@ -1,5 +1,7 @@
 # Two-Tier Flask + MySQL App — Docker Compose
 
+<img width="1902" height="907" alt="Screenshot 2026-08-03 112100" src="https://github.com/user-attachments/assets/7dd1964d-7677-4ddc-b034-a3caeda5e979" />
+
 A 2-tier application (Flask + MySQL) orchestrated entirely with Docker Compose — including a proper **healthcheck** so the app waits for MySQL to actually be ready, not just started.
 
 ## 📦 docker-compose.yml
