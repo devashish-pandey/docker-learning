@@ -1,1 +1,47 @@
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_PASSWORD: dev
+      MYSQL_USER: dev
+      MYSQL_ROOT_PASSWORD: dev
+      MYSQL_DATABASE: devops_db
+    volumes:
+      - ./mysql_data_new:/var/lib/mysql
+    networks:
+      - twotier
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD","mysqladmin","ping","-h","localhost","-udev","-pdev"]
+      interval: 10s
+      retries: 5
+      start_period: 60s
+      timeout: 5s
+
+  flask-app:
+    build:
+      context: .
+    container_name: flask-app
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev
+      MYSQL_ROOT_PASSWORD: dev
+      MYSQL_DB: devops_db
+
+    networks:
+      - twotier
+    ports:
+      - "5000:5000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+volumes:
+  mysql_data_new:
+
+networks:
+  twotier:
 
